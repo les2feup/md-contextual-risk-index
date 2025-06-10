@@ -1,0 +1,38 @@
+{
+    "name": [
+        "Ajuda",
+        "Alcântara",
+        "Alvalade",
+        "Areeiro",
+        "Arroios",
+        "Avenidas Novas",
+        "Beato",
+        "Belém",
+        "Benfica",
+        "Campo de Ourique",
+        "Campolide",
+        "Carnide",
+        "Estrela",
+        "Lumiar",
+        "Marvila",
+        "Misericórdia",
+        "Olivais",
+        "Parque das Nações",
+        "Penha de França",
+        "Santa Clara",
+        "Santa Maria Maior",
+        "Santo António",
+        "São Domingos de Benfica",
+        "São Vicente"
+    ],
+    "gini": [
+        0.377, 0.41, 0.385, 0.413, 0.438, 0.455, 0.377, 0.44, 0.372, 0.43,
+        0.429, 0.392, 0.478, 0.386, 0.322, 0.456, 0.378, 0.433, 0.392, 0.392,
+        0.447, 0.475, 0.392, 0.4
+    ],
+    "median_inc": [
+        11816, 12280, 18301, 17452, 10938, 17841, 10536, 19212, 14888, 14629,
+        12655, 15503, 14787, 20777, 10559, 11019, 12883, 20129, 10682, 10900,
+        9036, 14377, 18899, 11092
+    ]
+}
