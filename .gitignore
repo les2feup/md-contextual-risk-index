@@ -188,3 +188,6 @@ credentials.json
 # Backup files
 *.bak
 *.backup
+# Sensitivity analysis (notebook 09): per-state vulnerability caches and test maps are regenerated on demand
+data/tw_analysis/*/
+data/tw_analysis/*.png

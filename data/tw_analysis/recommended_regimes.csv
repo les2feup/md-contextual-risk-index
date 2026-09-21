@@ -1,0 +1,5 @@
+table,regime,evaluation_time,state_id,days,first_hm,last_hm,n_slots,label,vuln_mean,w_vuln,cri_iqr,cri_std,cri_gvf5
+T1g,weekday morning rush,2023-11-06 08:30:00,S02,"Mon,Tue,Wed,Thu,Fri",08:15,08:45,10,"bus_station=0.5, hospital=0.8, industrial=0.6, school=0.4, station=0.7, university=0.8",0.44839546305777095,0.17991735862108577,0.20628323631220274,0.17667879797340136,0.9411234226653817
+T1g,weekday late morning,2023-11-06 11:00:00,S04,"Mon,Tue,Wed,Thu,Fri",10:15,15:45,40,"attraction=0.5, bus_station=0.2, hospital=0.4, industrial=0.2, station=0.3, university=0.6",0.21283545986663602,0.39456348990335843,0.27652361537563996,0.19804229286813788,0.9498594956647071
+T1g,weekday night,2023-11-06 21:00:00,S09,"Mon,Tue,Wed,Thu,Fri",20:15,21:45,20,"bus_station=0.2, hospital=0.2, station=0.3",0.047896664974938816,0.5046132658773301,0.2243235735640854,0.1617170754394747,0.9237004177662164
+T1g,saturday daytime,2023-11-11 11:00:00,S11,"Sat,Sun",09:15,16:45,32,"attraction=0.7, hospital=0.2, mall=0.2, station=0.3",0.19538320451821434,0.4818257344726202,0.24926317984825597,0.19159707858141173,0.9470326944529227

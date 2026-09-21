@@ -40,7 +40,7 @@ Most notebooks are parameterized by a `city = "Lisbon"` / `"Porto"` variable in 
 | Exploration | `07` is an earlier or exploratory version of the CRI weighting, polar plots, and folium maps | nothing persisted |
 | CRI | `08` is the central notebook | `multi_layers/{City}_multi_layer_all_scenarios_with_CRI.geojson`, `multi_layers/{City}_cri_weights.csv`, `figures/{City}_cri_comparison.pdf` |
 | Thesis tables | `10` builds tables from the outputs of 01/06/08 and compares with the article's results read from git commit `7cef902` | `docs/thesis/` (CSV per table, `tables.tex`; `README.md` documents T1g and the scenarios) |
-| Sensitivity analysis (Lisbon, not part of the pipeline) | `09` scans activity states over the week and scores scenario sets; helpers in `notebook/cri_utils.py` (CRI functions copied verbatim from 08) and table specs in `notebook/tw_specs.py` | `tw_analysis/` (per-state vulnerability cache, metrics, candidate tables, maps). Delete a `tw_analysis/<table>/` folder to force recomputation. |
+| Sensitivity analysis (Lisbon, not part of the pipeline) | `09` scans activity states over the week and scores scenario sets; helpers in `notebook/cri_utils.py` (CRI functions copied verbatim from 08) and table specs in `notebook/tw_specs.py` | `tw_analysis/` (result CSVs are tracked; the per-state vulnerability caches in `tw_analysis/<table>/` and the PNG maps are gitignored and rebuilt by 09, about 30 min for all tables). The committed notebook has no outputs. |
 
 ### CRI definition (notebook 08, `compute_cri`)
 
