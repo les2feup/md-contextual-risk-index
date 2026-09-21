@@ -15,7 +15,10 @@ matplotlib>=3.5.0
 seaborn>=0.11.0
 
 # Hexagonal grid generation
-verus>=0.1.1
+# >=1.1.1: reads the city boundary GeoJSON in HexagonGridGenerator, normalizes
+# vulnerability with a zero baseline (value / max_vl), and applies time windows
+# to the loaded POTIs on every run() (no vi carry-over between scenarios).
+verus>=1.1.1
 
 # OpenStreetMap data access
 osmnx>=1.2.0
@@ -36,7 +39,7 @@ ipykernel>=6.0.0
 ipywidgets>=7.6.0
 
 # Statistical analysis
-h3>=3.7.0
+h3>=4.0.0
 
 # For time series and temporal analysis
 datetime
