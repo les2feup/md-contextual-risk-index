@@ -78,7 +78,7 @@ Follow these notebooks in sequence to reproduce the complete analysis pipeline:
 ```bash
 jupyter notebook notebook/01-spatiotemporal_vulnerability_assessment.ipynb
 ```
-Generates vulnerability layers for 4 temporal scenarios using POTI data and time windows.
+Generates vulnerability layers for 4 temporal scenarios using POTI data and time windows. The scenarios and the time-window table are defined in `data/time_windows/scenarios_T1g.csv` and `data/time_windows/time_windows_T1g.csv` (see `docs/thesis/README.md`); requires `verus>=1.1.1`. The article's original setup and results are in git commit `7cef902`.
 
 ### 2. Data Layer Preparation
 ```bash
@@ -106,7 +106,12 @@ jupyter notebook notebook/07_multi_layer_assessment.ipynb
 
 # Contextual Risk Index analysis
 jupyter notebook notebook/08_CRI_Analysis_All_Scenarios.ipynb
+
+# Tables for the thesis (docs/thesis/)
+jupyter notebook notebook/10-thesis_tables.ipynb
 ```
+
+`notebook/09-time_window_selection.ipynb` is a separate sensitivity analysis (time-window candidates and entropy-weighting variants) and is not needed to reproduce the results.
 
 ### Expected Outputs
 - Integrated grid maps with all layers
@@ -126,7 +131,7 @@ lisbon_data = gpd.read_file('data/multi_layers/Lisbon_multi_layer_all_scenarios_
 
 # Plot CRI for scenario 1
 fig, ax = plt.subplots(figsize=(12, 10))
-lisbon_data.plot(column='CRI_s1', cmap='RdYlGn_r', ax=ax, legend=True)
+lisbon_data.plot(column='s1_cri', cmap='RdYlGn_r', ax=ax, legend=True)
 plt.title('Contextual Risk Index - Scenario 1 (Lisbon)')
 plt.show()
 ```
@@ -135,7 +140,7 @@ plt.show()
 ```python
 # Compare CRI across all scenarios
 scenarios = ['s1', 's2', 's3', 's4']
-cri_columns = [f'CRI_{s}' for s in scenarios]
+cri_columns = [f'{s}_cri' for s in scenarios]
 
 # Calculate correlation matrix
 correlation_matrix = lisbon_data[cri_columns].corr()

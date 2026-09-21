@@ -1,0 +1,5 @@
+scenario,regime,evaluation_time,active_categories,active_potis
+S1,Weekday morning rush,Mon 08:30,"bus_station (0.5), hospital (0.8), industrial (0.6), school (0.4), station (0.7), university (0.8)",571
+S2,Weekday late morning,Mon 11:00,"attraction (0.5), bus_station (0.2), hospital (0.4), industrial (0.2), station (0.3), university (0.6)",385
+S3,Weekday night,Mon 21:00,"bus_station (0.2), hospital (0.2), station (0.3)",124
+S4,Saturday daytime,Sat 11:00,"attraction (0.7), hospital (0.2), mall (0.2), station (0.3)",325
