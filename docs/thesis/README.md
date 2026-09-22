@@ -60,8 +60,7 @@ same redundancy. Table 2 lists the categories active in each scenario.
 
 ## Method settings
 
-- VERUS after 1.1.1 (commit `de4850c` of the verus repository), 100 m hexagonal grid (6,569 hexagons for
-  Lisbon).
+- VERUS 1.1.2, 100 m hexagonal grid (6,569 hexagons for Lisbon).
 - Only the POTIs active at the evaluation time ($v_i > 0$) are clustered (OPTICS, then K-means seeded with
   the OPTICS centroids), so the number of clusters changes between scenarios.
 - Vulnerability is normalized with a zero baseline, `value / max_vulnerability`, where `max_vulnerability`
@@ -81,8 +80,7 @@ after Saturday 10:20, kept Saturday's values for attractions and malls, which ar
 Up to VERUS 1.1.1, the clustering also ignored the evaluation time: OPTICS received every POTI, inactive ones
 included, so it found the same clusters in every scenario, and the inactive POTIs counted in the number of
 POTIs that divides the Gaussian kernel of their cluster, which diluted its vulnerability. The article's
-results were produced that way. The revised results cluster only the active POTIs (verus commit
-`de4850c`). Table 5 uses the article's published CRI as it stands.
+results were produced that way. The revised results cluster only the active POTIs (verus 1.1.2). Table 5 uses the article's published CRI as it stands.
 
 ## Reproducing
 
