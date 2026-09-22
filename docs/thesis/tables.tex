@@ -61,16 +61,16 @@ S4 & Saturday daytime & Sat 11:00 & attraction (0.7), hospital (0.2), mall (0.2)
 \begin{table}[htbp]
 \centering
 \small
-\caption{Vulnerability $V$ per scenario (mean and 95th percentile, normalized by the maximum over the four scenarios, 2.557e-04), entropy weights of the core indicators (vulnerability $w_V$, response $w_R$, flood risk $w_F$) and equity indicators (Gini $w_G$, income $w_I$), and CRI mean and interquartile range ($\gamma = 0.5$).}
+\caption{Vulnerability $V$ per scenario (mean and 95th percentile, normalized by the maximum over the four scenarios, 2.421e-04), entropy weights of the core indicators (vulnerability $w_V$, response $w_R$, flood risk $w_F$) and equity indicators (Gini $w_G$, income $w_I$), and CRI mean and interquartile range ($\gamma = 0.5$).}
 \label{tab:vulnerability-cri}
 \begin{tabular}{lrrrrrrrrr}
 \toprule
 Scenario & $\bar{V}$ & $V_{95}$ & $w_V$ & $w_R$ & $w_F$ & $w_G$ & $w_I$ & $\overline{\mathrm{CRI}}$ & IQR \\
 \midrule
-S1 & 0.448 & 0.663 & 0.180 & 0.459 & 0.361 & 0.439 & 0.561 & 0.416 & 0.206 \\
-S2 & 0.213 & 0.450 & 0.395 & 0.339 & 0.266 & 0.439 & 0.561 & 0.396 & 0.277 \\
-S3 & 0.048 & 0.120 & 0.505 & 0.278 & 0.218 & 0.439 & 0.561 & 0.387 & 0.224 \\
-S4 & 0.195 & 0.515 & 0.482 & 0.290 & 0.228 & 0.439 & 0.561 & 0.364 & 0.249 \\
+S1 & 0.551 & 0.827 & 0.158 & 0.472 & 0.370 & 0.439 & 0.561 & 0.407 & 0.208 \\
+S2 & 0.360 & 0.593 & 0.244 & 0.424 & 0.333 & 0.439 & 0.561 & 0.405 & 0.214 \\
+S3 & 0.119 & 0.246 & 0.379 & 0.348 & 0.273 & 0.439 & 0.561 & 0.536 & 0.270 \\
+S4 & 0.375 & 0.769 & 0.344 & 0.368 & 0.289 & 0.439 & 0.561 & 0.420 & 0.239 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -84,12 +84,12 @@ S4 & 0.195 & 0.515 & 0.482 & 0.290 & 0.228 & 0.439 & 0.561 & 0.364 & 0.249 \\
 \toprule
 Pair & Spearman $\rho$ & Top-10\% overlap \\
 \midrule
-S1 / S2 & 0.738 & 0.572 \\
-S1 / S3 & 0.660 & 0.414 \\
-S1 / S4 & 0.697 & 0.422 \\
-S2 / S3 & 0.674 & 0.491 \\
-S2 / S4 & 0.868 & 0.731 \\
-S3 / S4 & 0.697 & 0.480 \\
+S1 / S2 & 0.908 & 0.734 \\
+S1 / S3 & 0.737 & 0.550 \\
+S1 / S4 & 0.758 & 0.626 \\
+S2 / S3 & 0.777 & 0.561 \\
+S2 / S4 & 0.879 & 0.810 \\
+S3 / S4 & 0.685 & 0.507 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -104,7 +104,7 @@ S3 / S4 & 0.697 & 0.480 \\
 Scenario set & Mean $\rho$ & Max $\rho$ & Most similar pair & Mean overlap & Max overlap \\
 \midrule
 Article (default windows) & 0.889 & 0.995 & Mon 08:40 / Mon 17:30 & 0.710 & 0.955 \\
-Revised (T1g regimes) & 0.723 & 0.868 & Mon 11:00 / Sat 11:00 & 0.518 & 0.731 \\
+Revised (T1g regimes) & 0.791 & 0.908 & Mon 08:30 / Mon 11:00 & 0.631 & 0.810 \\
 \bottomrule
 \end{tabular}
 \end{table}

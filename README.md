@@ -78,7 +78,7 @@ Follow these notebooks in sequence to reproduce the complete analysis pipeline:
 ```bash
 jupyter notebook notebook/01-spatiotemporal_vulnerability_assessment.ipynb
 ```
-Generates vulnerability layers for 4 temporal scenarios using POTI data and time windows. The scenarios and the time-window table are defined in `data/time_windows/scenarios_T1g.csv` and `data/time_windows/time_windows_T1g.csv` (see `docs/thesis/README.md`); requires `verus>=1.1.1`. The article's original setup and results are in git commit `7cef902`.
+Generates vulnerability layers for 4 temporal scenarios using POTI data and time windows. The scenarios and the time-window table are defined in `data/time_windows/scenarios_T1g.csv` and `data/time_windows/time_windows_T1g.csv` (see `docs/thesis/README.md`); requires verus after 1.1.1 (commit `de4850c` of the verus repository, which clusters only the POTIs active at each evaluation time). The article's original setup and results are in git commit `7cef902`.
 
 ### 2. Data Layer Preparation
 ```bash

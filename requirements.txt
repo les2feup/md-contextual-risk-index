@@ -18,6 +18,9 @@ seaborn>=0.11.0
 # >=1.1.1: reads the city boundary GeoJSON in HexagonGridGenerator, normalizes
 # vulnerability with a zero baseline (value / max_vl), and applies time windows
 # to the loaded POTIs on every run() (no vi carry-over between scenarios).
+# The results also need the fix after 1.1.1 that clusters only the POTIs active
+# at each evaluation time (verus commit de4850c); until it is released, install
+# verus from its repository.
 verus>=1.1.1
 
 # OpenStreetMap data access

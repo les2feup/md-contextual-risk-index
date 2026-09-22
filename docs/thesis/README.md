@@ -60,7 +60,10 @@ same redundancy. Table 2 lists the categories active in each scenario.
 
 ## Method settings
 
-- VERUS 1.1.1, 100 m hexagonal grid (6,569 hexagons for Lisbon).
+- VERUS after 1.1.1 (commit `de4850c` of the verus repository), 100 m hexagonal grid (6,569 hexagons for
+  Lisbon).
+- Only the POTIs active at the evaluation time ($v_i > 0$) are clustered (OPTICS, then K-means seeded with
+  the OPTICS centroids), so the number of clusters changes between scenarios.
 - Vulnerability is normalized with a zero baseline, `value / max_vulnerability`, where `max_vulnerability`
   is the largest raw vulnerability over the four scenarios (recorded in
   `data/vulnerability_layer/lisbon/vulnerability_metadata.json`). The four layers therefore share one scale.
@@ -73,8 +76,13 @@ same redundancy. Table 2 lists the categories active in each scenario.
 VERUS up to 1.1.0 carried the $v_i$ values of one evaluation time into the next when several times were
 evaluated with the same assessor, as the article's notebook did. Categories inactive at the new time kept
 the $v_i$ of the previously evaluated scenario. For example, the article's Monday 08:40 scenario, evaluated
-after Saturday 10:20, kept Saturday's values for attractions and malls, which are closed at 08:40. VERUS 1.1.1 applies the time windows to the loaded POTIs on every run, and the revised results are
-computed with it. Table 5 uses the article's published CRI as it stands.
+after Saturday 10:20, kept Saturday's values for attractions and malls, which are closed at 08:40. VERUS 1.1.1 applies the time windows to the loaded POTIs on every run.
+
+Up to VERUS 1.1.1, the clustering also ignored the evaluation time: OPTICS received every POTI, inactive ones
+included, so it found the same clusters in every scenario, and the inactive POTIs counted in the number of
+POTIs that divides the Gaussian kernel of their cluster, which diluted its vulnerability. The article's
+results were produced that way. The revised results cluster only the active POTIs (verus commit
+`de4850c`). Table 5 uses the article's published CRI as it stands.
 
 ## Reproducing
 
